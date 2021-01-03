@@ -1,0 +1,19 @@
+## pihole.ingress.yml
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  namespace: pihole
+  name: pihole-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: pihole.192.168.50.240.nip.io
+    http:
+      paths:
+        - path: /
+          backend:
+            serviceName: pihole-web
+            servicePort: 80
+---
