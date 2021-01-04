@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weewx
+  namespace: weewx
+  labels:
+    app: weewx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      pod-label: weewx-pod
+  template:
+    metadata:
+      labels:
+        pod-label: weewx-pod
+    spec:
+      containers:
+      - name: weewx
+        image: cqlanus/weewx:latest
+        volumeMounts:
+        - name: weewx-storage
+          mountPath: /var/lib/weewx
+      volumes:
+      - name: weewx-storage
+        persistentVolumeClaim:
+          claimName: weewx-ssd
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: weewx-web
+  namespace: weewx
+  labels:
+    app: weewx
+spec:
+  selector:
+    pod-label: weewx-pod
+  ports:
+  - protocol: TCP
+    port: 80

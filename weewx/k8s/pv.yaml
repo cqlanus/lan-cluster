@@ -1,0 +1,17 @@
+## weewx.persistentvolume.yml
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: weewx-ssd
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/ssd/weewx"
+---
