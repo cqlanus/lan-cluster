@@ -1,0 +1,15 @@
+## homeassistant/pvc.yaml
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: "homeassistant"
+  name: "homeassistant-ssd-claim"
+spec:
+  storageClassName: "manual"
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: "50Gi"
+---
