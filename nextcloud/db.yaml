@@ -31,7 +31,7 @@ spec:
       volumes:
         - name: db-storage
           persistentVolumeClaim:
-            claimName: nextcloud-ssd
+            claimName: nextcloud-ssd-claim
 ---
 apiVersion: v1
 kind: Service

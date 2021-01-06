@@ -21,6 +21,8 @@ spec:
         env:
           - name: NEXTCLOUD_OVERWRITEPROTOCOL
             value: https
+          - name: NEXTCLOUD_HOSTNAME
+            value: nextcloud.chrislanus.com
         volumeMounts:
           - name: server-storage
             mountPath: /var/www/html
@@ -28,7 +30,7 @@ spec:
       volumes:
         - name: server-storage
           persistentVolumeClaim:
-            claimName: nextcloud-ssd
+            claimName: nextcloud-ssd-claim
 ---
 apiVersion: v1
 kind: Service

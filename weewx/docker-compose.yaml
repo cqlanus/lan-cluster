@@ -1,0 +1,17 @@
+---
+version: "3.8"
+
+volumes:
+  data:
+
+services:
+  weewx:
+    build: .
+    init: true
+    restart: "always"
+    volumes:
+      - ./data:/data
+    environment:
+      - TIMEZONE=US/Central
+      - WEEWX_UID=weewx
+      - WEEWX_GID=dialout

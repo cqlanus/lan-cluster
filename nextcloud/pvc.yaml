@@ -4,7 +4,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   namespace: "nextcloud"
-  name: "nextcloud-ssd"
+  name: "nextcloud-ssd-claim"
 spec:
   storageClassName: "manual"
   accessModes:

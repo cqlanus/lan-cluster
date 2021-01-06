@@ -1,7 +1,11 @@
-FROM cqlanus/docker-weewx:latest
+FROM felddy/weewx:4
+# FROM mitct02/weewx:3.8.0
 MAINTAINER Chris Lanus <cqlanus@gmail.com>
 
-ENV TZ=America/Chicago
-ENV CONF_FILE = ${PWD}/conf/weewx.conf 
+ARG WEEWX_UID=0
 
-CMD ['sh', 'run.sh']
+RUN chmod 775 /var/lib/weewx
+
+ENTRYPOINT ["./entrypoint.sh"]
+CMD ["/data/weewx.conf"]
+
