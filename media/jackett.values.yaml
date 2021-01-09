@@ -1,0 +1,82 @@
+
+replicaCount: 1
+
+image:
+  repository: gjeanmart/jackettvpn
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env:
+  - name: VPN_ENABLED
+    value: "yes"
+  - name: VPN_USERNAME
+    valueFrom:
+      secretKeyRef:
+        name: "ipvanish"
+        key: "username"
+  - name: VPN_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: "ipvanish"
+        key: "password"
+  - name: LAN_NETWORK
+    value: "192.168.50.0/24"
+  - name: CREATE_TUN_DEVICE
+    value: "true"
+  - name: PUID
+    value: "1000"
+  - name: PGID
+    value: "1000"
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+  path: /
+  hosts:
+    - jackett.bananaspliff.org
+  tls:
+   - secretName: jackett-bananaspliff-org
+     hosts:
+       - jackett.bananaspliff.org
+
+volumes:
+  - name: "media-ssd"
+    persistentVolumeClaim:
+      claimName: "media-ssd"
+  - name: "dev-tun"  # Needed for VPN
+    hostPath:
+      path: "/dev/net/tun"
+
+volumeMounts:
+  - name: "media-ssd"
+    mountPath: "/config"
+    subPath: "configs/jackett"
+  - name: "media-ssd"
+    mountPath: "/downloads"
+    subPath: "downloads/jackett"
+
+resources:
+  requests:
+    memory: 128Mi
+    cpu: 0.1
+  limits:
+    memory: 256Mi
+    cpu: 0.5
+
+securityContext:
+  capabilities:
+    add:
+      - NET_ADMIN
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+

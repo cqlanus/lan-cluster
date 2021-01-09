@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- TrustBox script --> 
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
+<base href="/" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<title>404 Error - IPVanish VPN</title>
+
+<link rel="SHORTCUT ICON" href="/images/ip.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/images/customIcon.png" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800|Raleway:500,600,800&display=swap' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" />
+<link rel="stylesheet" href="/css/stylesheet.css" />
+
+<script>
+_udn = ".ipvanish.com";
+</script>
+</head>
+<body class="errorpage en ">
+
+<!-- Google Tag Manager: dataLayer -->
+<script>
+function read_cookie(key) {
+    var result;
+    return (result = new RegExp('(^|; )' + encodeURIComponent(key) + '=([^;]*)').exec(document.cookie)) ? result[2] : null;
+}
+
+var dataLayer = window.dataLayer = window.dataLayer || [];
+
+var vtype_val = read_cookie('vtype') || '1';
+dataLayer.push({'visitorType': vtype_val});
+</script>
+<!-- End dataLayer -->
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZJF7V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZJF7V');</script>
+<!-- End Google Tag Manager -->
+<div class="body-content topbar">
+    <div class="body-container">
+        <div class="row np nm">
+            <div class="topbar-inner pull-right text-right">
+                 <div class="dropdown supportnums">
+                  <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                      <p><i class="fa fa-phone"></i> Support:</p>
+                      <p id="selected"><img src="/images/a/2019/flags/usa.svg" class="support-flag" alt="USA"> +1 800 591 5241</p> <p><i class="fa fa-caret-down"></i></p>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                      <li>
+                          <p id="us"><img src="/images/a/2019/flags/usa.svg" class="support-flag" alt="USA"> +1 800 591 5241</p>
+                      </li>
+                      <li>
+                          <p id="mx"><img src="/images/a/2019/flags/mexico.svg" class="support-flag" alt="Mexico"> +52 55 4165 2627</p>
+                      </li>
+                    <li>
+                        <p id="gb"><img src="/images/a/2019/flags/uk.svg" class="support-flag" alt="UK"> +44 20 3966 0521 </p>
+                    </li>
+                    <li>
+                        <p id="es"><img src="/images/a/2019/flags/spain.svg" class="support-flag" alt="Spain"> +34 919 490 509</p>
+                    </li>
+                    <li>
+                        <p id="au"><img src="/images/a/2019/flags/australia.svg" class="support-flag" alt="Australia"> +61 251 335 555</p>
+                    </li>
+                    <li>
+                        <p id="br"><img src="/images/a/2019/flags/brazil.svg" class="support-flag" alt="Brasil"> +55 61 4042 7858</p>
+                    </li>
+                    <li>
+                        <p id="de"><img src="/images/a/2019/flags/germany.svg" class="support-flag" alt="Germany"> +49 80 0800 1022</p>
+                    </li>
+                  </ul>
+                </div>
+
+                <p>
+                    <a href="#" class="livechat-btn">
+                        <i class="fa fa-comments"></i> <span>Live Chat</span>
+                    </a>
+                </p>
+                <p class="tophead_contanct"><a href="https://support.ipvanish.com/hc/en-us/requests/new" target="_blank"><i class="fa fa-sticky-note"></i> Contact Us</a></p>
+            </div>
+        </div>
+        </div>
+</div>
+
+<div class="heading">
+	<div class="body-container">
+		<div class="row">
+			<div class="col-md-3 pull-left norp">
+				<div class="logo">
+					<a href="./" class="indent">
+						<img src="/images/a/2019/ipvanish-logo.svg" alt="ipvanish vpn logo" />
+					</a>
+				</div>
+			</div>
+			<div class="col-md-9 mainnav">
+				<nav class="navbar navbar-default navbar-right">
+					<div class="navbar-header">
+						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle" title="Show / Hide Menu">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="navbarCollapse" class="collapse navbar-collapse">
+						<div class="clearfix"></div>
+						<ul class="nav navbar-nav">
+							<li><a href="/why-vpn/">Why IPVanish</a></li>
+                            <li class="dropdown">
+                              <a href="/pricing/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solutions <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="/solutions/vpn/"><span class="ipv_icon"></span> VPN</a></li>
+                                <li><a href="/solutions/vpn-storage/"><span class="ipv_icon"></span> VPN + <span class="ss_icon"></span> Storage</a></li>
+                                <li><a href="/pricing/">Product Comparison</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="/vpn-setup/">Apps</a></li>
+							<li><a href="https://support.ipvanish.com">Help</a></li>
+							<li><a href="https://account.ipvanish.com">My Account</a></li>
+							<li><a href="https://signup.ipvanish.com?aff=JAN21" id="signup_button_nav_inc_one" class="signup_cta">Subscribe Now</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--end row-->
+	</div>
+	<!--body-container-->
+</div>
+<!--end heading / header-->
+
+<script>
+var _user_id = null;
+var _session_id = getCookie('SC_session');
+
+if(!_session_id) {
+    _session_id = setCookie('SC_session');
+}
+
+var _sift = window._sift = window._sift || [];
+_sift.push(['_setAccount', 'ddc13b0529']);
+_sift.push(['_setUserId', _user_id]);
+_sift.push(['_setSessionId', _session_id]);
+_sift.push(['_trackPageview']);
+
+(function() {
+    function ls() {
+        var e = document.createElement('script');
+        e.src = 'https://cdn.siftscience.com/s.js';
+        document.body.appendChild(e);
+    }
+    if (window.attachEvent) {
+        window.attachEvent('onload', ls);
+    } else {
+        window.addEventListener('load', ls, false);
+    }
+})();
+
+function setCookie(name) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    var rand = Math.floor(Math.random() * 4096);
+    var cvalue = rand + (new Date().getTime()).toString(16);
+    var hostName = window.location.hostname;
+    var domain = hostName.substring(hostName.lastIndexOf(".", hostName.lastIndexOf(".") - 1) + 1);
+    document.cookie = name + "=" + cvalue + ";" + expires + ";path=/" + ";domain=" + domain;
+    return cvalue;
+}
+
+function getCookie(name) {
+    var value = "; " + document.cookie;
+    var parts = value.split("; " + name + "=");
+    if (parts.length == 2) return parts.pop().split(";").shift();
+}
+</script>
+<div class="page-container">
+
+<div class="body-content hero">
+	<div class="body-container">
+		<div class="row nm np">
+			<div class="col-md-12 padxx">
+				<h3 class="tpad">404 Error</h3>
+				<h1>Oops, the page you’re requesting cannot be located.</h1>
+			</div>
+		</div>
+        <div class="space-gap"></div>
+		<div class="row">
+           <div class="col-md-6 col-md-push-6 center padx">
+               <img src="/images/a/2019/404/404-hero.svg" class="vector-img" alt="Error">
+            </div>
+           <div class="col-md-6 col-md-pull-6 padx">
+               <div class="row">
+               <p class="pad left-align">It appears this page may have vanished. Try one of these popular pages instead.</p>
+               <div class="col-md-12 col-xs-10">
+               <ul class="errorpg-links">
+                   <li><a href="/why-vpn/" class="line green">About IPVanish</a></li>
+                   <li><a href="/vpn-tunnel/" class="line green">What Is VPN?</a></li>
+                   <li><a href="https://support.ipvanish.com/hc/en-us" class="line green">Support Center</a></li>
+               </ul>
+                </div>
+                </div>
+               <p>Just looking for the best VPN deal? </p>
+               <div class="orange-cta padx">
+                   <a href="https://signup.ipvanish.com">Get IPVanish VPN Now</a>
+               </div>
+               <p class="small">Still not what you’re searching for? <span class="center-block"><a href="/" class="line green">Go back to the homepage</a> »</span></p>
+            </div>
+        </div>
+        <div class="space-gap"></div>
+	</div>
+</div>
+<div class="push"></div>
+</div>
+<!--end of page container-->
+
+<footer>
+	<div class="body-content footer">
+		<div class="body-container padxx">
+			<div class="row">
+			    <div class="col-md-9 col-sm-12">
+                    <div class="footer-links-flex footer-links">
+                        <div class="flex-item">
+                            <h4>IPVanish</h4>
+                            <ul>
+                                <li><a href="/what-is-a-vpn/">What is VPN?</a></li>
+                                <li><a href="/pricing/">Pricing</a></li>
+                                <li><a href="/vpn-protocols/">VPN Protocols</a></li>
+                                <li><a href="/servers/">VPN Servers</a></li>
+                                <li><a href="/reviews/">Reviews</a></li>
+                                <li><a href="/press/">Press</a></li>
+                                <li><a href="/id-me-edu/">Student Discount</a></li>
+                                <li><a href="https://signup.ipvanish.com?aff=JAN21" class="orange" id="signup_footer_one">Get IPVanish</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item">
+                            <h4>Solutions</h4>
+                            <ul>
+                                <li><a href="/services/">Stream Services</a></li>
+                                <li><a href="/stream-sports/">Stream Sports</a></li>
+                                <li><a href="/best-vpn-kodi/">Kodi VPN</a></li>
+                                <li><a href="/best-vpn-fire-stick/">Fire Stick VPN</a></li>
+                                <li><a href="/teams/">VPN for Teams</a></li>
+                                <li><a href="/solutions/vpn-storage/">VPN with Cloud Storage</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item">
+                            <h4>Privacy Tools</h4>
+                            <ul>
+                                <li><a href="/checkip/" target="_blank">IP Checker</a></li>
+                                <li><a href="https://blog.ipvanish.com/password-generator/" target="_blank">Password Generator</a></li>
+                                <li><a href="/free-vs-paid/">Free VPN vs Paid VPN</a></li>
+                                <li><a href="/resources/">Privacy Guides</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item">
+                            <h4>Setup Guides</h4>
+                            <ul>
+                                <li><a href="/setup-guides/">VPN Setup Guides</a></li>
+                                <li><a href="https://support.ipvanish.com/hc/en-us/articles/115002076074-IPVanish-for-Windows-Guide" target="_blank">Windows VPN</a></li>
+                                <li><a href="https://support.ipvanish.com/hc/en-us/articles/115002076094-IPVanish-for-macOS-Guide" target="_blank">macOS VPN</a></li>
+                                <li><a href="https://support.ipvanish.com/hc/en-us/articles/115002081533-IPVanish-for-iOS-Guide" target="_blank">iOS VPN</a></li>
+                                <li><a href="https://support.ipvanish.com/hc/en-us/articles/115002076114-IPVanish-for-Android-Guide" target="_blank">Android VPN</a></li>
+                                <li><a href="https://support.ipvanish.com/hc/en-us/articles/115002080593-IPVanish-for-Amazon-Fire-TV-Fire-Stick-" target="_blank">Fire TV VPN</a></li>
+                                <li><a href="https://support.ipvanish.com/hc/en-us/sections/360001340693-Linux" target="_blank">Linux VPN</a></li>
+                                <li><a href="https://support.ipvanish.com/hc/en-us/articles/360024301593-IPVanish-app-for-Chrome-OS" target="_blank">Chrome OS VPN</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li><a href="https://support.ipvanish.com">Support Center</a></li>
+                                <li><a href="https://support.ipvanish.com/hc/en-us/requests/new">Get Help</a></li>
+                                <li><a href="https://status.ipvanish.com/" target="_blank">System Status</a></li>
+                                <li><a href="#" class="livechat-btn">Live Chat</a></li>
+                                <li><a href="https://blog.ipvanish.com" rel="noopener" target="_blank">Blog</a></li>
+                                <li><a href="/partners/">Partners</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-item">
+                            <h4>Legal</h4>
+                            <ul>
+                                <li><a href="/tos/">Terms of Service</a></li>
+                                <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                                <li><a href="/export-policy/">Export Policy</a></li>
+                                <li><a href="/dmca-policy/">DMCA Policy</a></li>
+                                <li><a href="/money-back-guarantee/">Money-Back Guarantee</a></li>
+                                <li><a href="/accessibility/">Accessibility</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-3 col-sm-12 np footer-side">
+                    <div class="col-md-12 col-sm-4 col-xs-12 np">
+				    <div class="center">
+					<!-- TrustBox widget - Mini --> <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5079581d00006400051d2aca" data-style-height="120px" data-style-width="210px" data-theme="dark"> <a href="https://www.trustpilot.com/review/www.ipvanish.com" target="_blank" rel="noopener">Trustpilot</a> </div> <!-- End TrustBox widget -->
+                    </div>
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-12">
+                    <div class="social-icons np">
+                        <ul>
+                            <li><a href="https://www.facebook.com/ipvanish" rel="noopener" target="_blank" aria-label="Facebook"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://twitter.com/ipvanish" rel="noopener" target="_blank" aria-label="Twitter"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="https://netprotect.com/" target="_blank" rel="noopener"><img src="/images/np-icon-light.png" width="48" height="41" alt="NetProtect"></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-md-12 col-sm-4 col-xs-12">
+                        <div class="col-sm-6 col-xs-3 padx  vti">
+                        <img src="/images/a/2019/press/VTI_SocialBadge_White.svg" alt="VTI">
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!--end row-->
+		</div>
+		<!--body-container-->
+	</div>
+	<!--body-content-->
+
+	<div class="body-content subfoot">
+		<div class="body-container">
+		<div class="row">
+            <div class="col-md-12 center np">
+                <p>&copy; 2021 J2 Global, Inc. or its affiliates (collectively, “J2”).
+                    <span class="orphan">All rights reserved.</span>
+                    IPVanish is a registered trademark of J2.
+                    <span class="orphan">700 S. Flower St., Suite 1500, Los Angeles, CA 90017</span></p>
+            </div>
+		</div>
+		<!--row-->
+		</div>
+		<!--body-container-->
+	</div>
+	<!--body-content-->
+</footer>
+
+<!--Scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script src="/js/script_file.js"></script>
+<script src="/js/privacyreport.js"></script>
+<script>
+$(function(){
+	privacyReport(function (err, report) {
+		// Error Check
+		if (err) {
+			throw err;
+		};
+		var usernetsec = report.netSecurity;
+		// Check and Print
+		// IP
+		if (report.ip != null){
+			$('.checklist-user-ip').html(report.ip);
+		};
+
+		// Location
+		var location = [];
+		if (report.location.city) {
+			location.push(report.location.city);
+		}
+
+		if (report.location.region) {
+			location.push(report.location.region);
+
+		}
+
+		if (report.location.country_name) {
+			location.push(report.location.country_name);
+		}
+
+		if (location.length > 0) {
+			$('.checklist-user-loc').html(location.join(', '));
+		}
+		else {
+			$('.checklist-user-loc').html('Unavailable');
+		}
+
+		// Net Security
+		if (report.vpn.enabled  && report.vpn.secure) {
+			report.netSecurity = "Secured";
+			$('.checklist-user-net').html('SECURED');
+			$('.checklist-net').addClass('green');
+		} else if(report.vpn.enabled && !report.vpn.secure){
+			report.netSecurity = "Possibly Unsecure";
+			$('.checklist-user-net').html('Potential Concern');
+			$('.checklist-net').addClass('orange');
+		} else if(!report.vpn.enabled){
+			report.netSecurity = "Unsecure";
+			$('.checklist-user-net').html('EXPOSED');
+			$('.checklist-net').addClass('red');
+		};
+	});
+});
+</script>
+<!-- Affiliate Tracking Code -->
+<script id="pap_x2s6df8d" src="https://a.ipvanish.com/scripts/trackjs.js" type="text/javascript"></script>
+<script type="text/javascript"><!--
+PostAffTracker.setAccountId('default1');
+try {
+	PostAffTracker.disableTrackingMethod('F');
+	PostAffTracker.track();
+} catch (err) { }
+//-->
+</script>
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.zESettings = {
+  webWidget: {
+    chat: {
+      departments: {
+        enabled: ['IPVanish Technical Support', 'IPVanish Sales', 'IPVanish Billing Support']
+      }
+    }
+  }
+};
+</script>
+
+<script>
+/*<![CDATA[*/
+window.zE || (function(key, delay) {
+    // init Zendesk placeholder vars
+    var zE = window.zE = window.zEmbed = function() {
+        zE._.push(arguments);
+    }
+    zE.set = function(e) { zE.set._.push(e); }
+    zE._ = [];
+    zE.set._ = [];
+    zE.t = +new Date;
+
+    // init Zendesk script tag
+    var s = zE.s = document.createElement('script');
+    s.async = true;
+    s.setAttribute("charset", "utf-8"),
+    s.src = "https://static.zdassets.com/ekr/asset_composer.js?key=" + key;
+    s.type = "text/javascript";
+
+    // inject Zendesk script tag after page loaded + delay time
+    window.onload = function() {
+        setTimeout(function() {
+            document.body.appendChild(s);
+        }, delay);
+    };
+})('7dcfa772-1f05-4844-9e53-6f5dc0df8801', 2000 /*delay after page loaded*/);
+/*]]>*/
+</script>
+
+<script>
+    zE(function() {
+        zE.hide();
+    });
+
+    // Live Chat Buttons click
+    (function() {
+        var disabled = false;
+        var buttons = document.querySelectorAll('a.livechat-btn');
+        buttons.forEach(function(btnEl) {
+            var textEl = btnEl.querySelector('span');
+            if (!textEl) {
+                textEl = btnEl;
+            }
+            var initialText = textEl.innerText;
+
+            btnEl.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // prevent multiple clicks before zendesk is loaded
+                if (disabled) return false;
+                disabled = true;
+                btnEl.style = 'pointer-events: none; opacity: .8;';
+                textEl.innerText = 'Loading...';
+
+                // wait for Zendesk
+                zE(function() {
+                    disabled = false;
+                    btnEl.style = '';
+                    textEl.innerText = initialText;
+                    zE.activate();
+                });
+                return false;
+            });
+        });
+    })();
+</script>
+<!-- End of ipvanish Zendesk Widget script -->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#474b4d",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#6fbc44",
+      "text": "#ffffff"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "message": "Cookies help us optimize your visit. They are also used for stats, social media, and marketing. By continuing, you accept this.",
+    "href": "https://www.ipvanish.com/privacy-policy/"
+  }
+})});
+</script></body>
+</html>
