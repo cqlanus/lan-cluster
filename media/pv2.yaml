@@ -1,0 +1,17 @@
+## media/pv.yaml
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: "media-ssd2"
+    labels:
+      type: "local"
+spec:
+  storageClassName: "manual"
+  capacity:
+    storage: "200Gi"
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/mnt/ssd/media2"
+---
