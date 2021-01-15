@@ -3,7 +3,7 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: weewx-ingress
-  namespace: weewx
+  namespace: wx
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:

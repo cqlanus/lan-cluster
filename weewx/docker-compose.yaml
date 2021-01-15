@@ -6,12 +6,13 @@ volumes:
 
 services:
   weewx:
-    build: .
+    image: felddy/weewx
     init: true
     restart: "always"
     volumes:
       - ./data:/data
+      - ./data:/var/lib/weewx
     environment:
       - TIMEZONE=US/Central
       - WEEWX_UID=weewx
-      - WEEWX_GID=dialout
+      - WEEWX_GID=weewx

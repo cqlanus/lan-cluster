@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: weewx
-  namespace: weewx
+  namespace: wx
   labels:
     app: weewx
 spec:
@@ -18,12 +18,26 @@ spec:
     spec:
       containers:
       - name: weewx
-        image: cqlanus/weewx:latest
+        image: felddy/weewx
+        env:
+        - name: TIMEZONE
+          value: US/Central
+        - name: WEEWX_UID
+          value: weewx
+        - name: WEEWX_GID
+          value: weewx
         volumeMounts:
         - name: weewx-storage
           mountPath: /var/lib/weewx
+          subPath: storage
+        - name: weewx-conf
+          mountPath: /data
+          subPath: conf
       volumes:
       - name: weewx-storage
+        persistentVolumeClaim:
+          claimName: weewx-ssd
+      - name: weewx-conf
         persistentVolumeClaim:
           claimName: weewx-ssd
 ---
@@ -31,7 +45,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: weewx-web
-  namespace: weewx
+  namespace: wx
   labels:
     app: weewx
 spec:

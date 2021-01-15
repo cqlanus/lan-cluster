@@ -3,7 +3,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  namespace: weewx
+  namespace: wx
   name: weewx-ssd
 spec:
   storageClassName: manual
