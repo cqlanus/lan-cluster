@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: weewx
-        image: cqlanus/weewx:felddy
+        image: cqlanus/weewx:latest
         imagePullPolicy: Always
         ports:
           - containerPort: 8001
@@ -39,6 +39,9 @@ spec:
         - name: weewx-storage
           mountPath: /data
           subPath: conf
+        - name: weewx-storage
+          mountPath: /var/www/html
+          subPath: web
       volumes:
       - name: weewx-storage
         persistentVolumeClaim:
