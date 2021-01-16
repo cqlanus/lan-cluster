@@ -1,21 +1,17 @@
-FROM ubuntu:20.04
-# FROM mitct02/weewx:3.8.0
+FROM felddy/weewx
 MAINTAINER Chris Lanus <cqlanus@gmail.com>
 
-RUN apt update
-RUN apt install wget python3-configobj python3-pil python3-serial python3-usb python3-pip python3-ephem -y
-RUN apt install python3-cheetah -y
+RUN chmod -R 777 /data
 
-RUN wget https://weewx.com/downloads/weewx-4.3.0.tar.gz
-RUN tar xvfz weewx-4.3.0.tar.gz
-WORKDIR weewx-4.3.0
+RUN apt-get install wget -y
 
-RUN python3 ./setup.py build
-RUN python3 ./setup.py install
+# Forecast Extensions
+RUN wget -O weewx-forecast.zip https://github.com/matthewwall/weewx-forecast/archive/master.zip
+RUN ./bin/wee_extension --install weewx-forecast.zip
 
-RUN cd /home/weewx
-RUN cp util/init.d/weewx.debian /etc/init.d/weewx
-RUN chmod +x /etc/init.d/weewx
-RUN update-rc.d weewx defaults 98
+# Belchertown skin
+RUN wget https://github.com/poblabs/weewx-belchertown/releases/download/weewx-belchertown-1.2/weewx-belchertown-release-1.2.tar.gz
+RUN ./bin/wee_extension --install weewx-belchertown-release-1.2.tar.gz
 
-CMD /etc/init.d/weewx start
+ENTRYPOINT ["./entrypoint.sh"]
+CMD ["/data/weewx.conf"]

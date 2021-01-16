@@ -1,7 +1,0 @@
-FROM felddy/weewx
-MAINTAINER Chris Lanus <cqlanus@gmail.com>
-
-RUN chmod -R 777 /data
-
-ENTRYPOINT ["./entrypoint.sh"]
-CMD ["/data/weewx.conf"]
