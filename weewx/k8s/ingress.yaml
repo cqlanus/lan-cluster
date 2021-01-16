@@ -15,5 +15,9 @@ spec:
           backend:
             serviceName: weewx-web
             servicePort: 80
+        - path: /web
+          backend:
+            serviceName: weewx-web
+            servicePort: 8001
 ---
   
