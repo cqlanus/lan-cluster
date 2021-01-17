@@ -6,7 +6,7 @@ RUN chmod -R 777 /data
 RUN apt-get install wget python3-cheetah -y
 
 # Forecast Extensions
-RUN wget -O weewx-forecast.zip https://github.com/matthewwall/weewx-forecast/archive/master.zip
+RUN wget -O weewx-forecast.zip https://github.com/cqlanus/weewx-forecast/archive/master.zip
 RUN ./bin/wee_extension --install weewx-forecast.zip
 
 # Belchertown skin
@@ -14,8 +14,16 @@ RUN wget https://github.com/poblabs/weewx-belchertown/releases/download/weewx-be
 RUN ./bin/wee_extension --install weewx-belchertown-release-1.2.tar.gz
 
 RUN pip3 install Cheetah3
-RUN mkdir /var/www && mkdir /var/www/html && mkdir /var/lib/weewx
+RUN mkdir /var/lib/weewx
 RUN chmod -R 777 /var/lib/weewx
+
+RUN apt update
+RUN apt install nginx -y
+COPY ./nginx/default /etc/nginx/sites-available/default
+EXPOSE 80/tcp
+RUN /etc/init.d/nginx start
+
+RUN sed -i -e 's/isAlive/is_alive/g' `find /home/weewx -name '*.py'`
 
 ENTRYPOINT ["./entrypoint.sh"]
 CMD ["/data/weewx.conf"]
