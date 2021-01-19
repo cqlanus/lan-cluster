@@ -18,8 +18,8 @@ RUN chmod -R 777 /var/lib/weewx
 
 RUN apt update
 RUN apt install nginx -y
-COPY ./nginx/default /etc/nginx/sites-available/default
-EXPOSE 80/tcp
+COPY ./nginx/weewx.conf /etc/nginx/sites-available/weewx.conf
+EXPOSE 8001/tcp
 RUN /etc/init.d/nginx start
 RUN cd ~
 RUN python -m pip install pip
