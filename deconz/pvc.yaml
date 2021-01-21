@@ -1,0 +1,15 @@
+## weewx.persistentvolumeclaim.yml
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: deconz
+  name: deconz-data
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
