@@ -30,6 +30,7 @@ RUN python -m pip install Pillow
 
 RUN sed -i -e 's/isAlive/is_alive/g' `find /home/weewx -name '*.py'`
 RUN cd /home/weewx
+COPY ./skins /home/weewx/skins/
 
 ENTRYPOINT ["./entrypoint.sh"]
 CMD ["/data/weewx.conf"]

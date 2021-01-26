@@ -42,6 +42,9 @@ spec:
         - name: weewx-storage
           mountPath: /var/www/html
           subPath: web
+        - name: weewx-storage
+          mountPath: /home/weewx/skins
+          subPath: skins
       volumes:
       - name: weewx-storage
         persistentVolumeClaim:
