@@ -1,0 +1,51 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dokuwiki
+  namespace: wiki
+  labels:
+    app: dokuwiki
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      pod-label: dokuwiki-pod
+  template:
+    metadata:
+      labels:
+        pod-label: dokuwiki-pod
+    spec:
+      containers:
+      - name: dokuwiki
+        image: ghcr.io/linuxserver/dokuwiki
+        imagePullPolicy: Always
+        env:
+        - name: TIMEZONE
+          value: US/Central
+        - name: PUID
+          value: "1000"
+        - name: PGID
+          value: "1000"
+        volumeMounts:
+        - name: dokuwiki-data
+          mountPath: /config
+      volumes:
+      - name: dokuwiki-data
+        persistentVolumeClaim:
+          claimName: dokuwiki-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dokuwiki-web
+  namespace: wiki
+  labels:
+    app: dokuwiki
+spec:
+  type: LoadBalancer
+  selector:
+    pod-label: dokuwiki-pod
+  ports:
+  - protocol: TCP
+    port: 80
