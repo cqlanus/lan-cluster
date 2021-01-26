@@ -1,0 +1,15 @@
+## dokuwiki/pvc.yaml
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: wiki
+  name: dokuwiki-data
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 8Gi
+---
