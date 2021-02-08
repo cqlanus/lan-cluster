@@ -12,6 +12,7 @@ env: {}
   # TZ:
 
 service:
+  type: LoadBalancer
   port:
     port: 8123
 

@@ -21,9 +21,10 @@ spec:
           env:
             - name: POSTGRES_DB
               value: nextcloud
-          envFrom:
-            - secretRef:
-                name: nextcloud-db-secret
+            - name: POSTGRES_USER
+              value: nextcloud
+            - name: POSTGRES_PASSWORD
+              value: nextcloud
           volumeMounts:
             - name: db-storage
               mountPath: /var/lib/postgresql/data1

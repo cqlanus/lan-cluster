@@ -1,0 +1,15 @@
+## homeassistant/pvc.yaml
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: "node-red"
+  name: "node-red-ssd-claim"
+spec:
+  storageClassName: "manual"
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: "5Gi"
+---

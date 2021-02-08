@@ -1,17 +1,17 @@
-## nextcloud.persistentvolume.yml
+## node-red/pv.yaml
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: "nextcloud-ssd"
+  name: "node-red-ssd"
   labels:
     type: "local"
 spec:
   storageClassName: "manual"
   capacity:
-    storage: "50Gi"
+    storage: "5Gi"
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/ssd/cloud"
+    path: "/mnt/ssd/node_red"
 ---
