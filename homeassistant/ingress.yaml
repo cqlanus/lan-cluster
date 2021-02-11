@@ -4,7 +4,7 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   namespace: "homeassistant" # Same namespace as the deployment
-  name: "homeassistant-ingress" # Name of the ingress (see kubectl get ingress -A)
+  name: "homeassistant-ing" # Name of the ingress (see kubectl get ingress -A)
   annotations:
     kubernetes.io/ingress.class: "nginx"
     cert-manager.io/cluster-issuer: "letsencrypt-prod" # Encrypt using the ClusterIssuer deployed while setting up Cert-Manager
@@ -20,5 +20,5 @@ spec:
       paths:
         - path: /  # We will access NextCloud via the URL https://nextcloud.<domain.com>/
           backend:
-            serviceName: "homeassitant-home-assistant" # Mapping to the service (see kubectl get services -n nextcloud)
+            serviceName: "homeassistant-home-assistant" # Mapping to the service (see kubectl get services -n nextcloud)
             servicePort: 8123 # Mapping to the port (see kubectl get services -n nextcloud)

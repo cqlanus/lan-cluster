@@ -162,7 +162,7 @@ affinity:
     requiredDuringSchedulingIgnoredDuringExecution:
       nodeSelectorTerms:
       - matchExpressions:
-        - key: zigbee
+        - key: deconz
           operator: In
           values:
           - deconz
