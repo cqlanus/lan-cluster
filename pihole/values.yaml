@@ -191,7 +191,7 @@ monitoring:
   podMonitor:
     enabled: false
   sidecar:
-    enabled: false
+    enabled: true
     port: 9617
     image:
       repository: ekofr/pihole-exporter

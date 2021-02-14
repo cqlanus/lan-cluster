@@ -89,9 +89,9 @@ extraVolumeMounts: []
 
 monitoring:
   podMonitor:
-    enabled: false
+    enabled: true
   sidecar:
-    enabled: false
+    enabled: true
     port: 9234
     args:
       - "--use-splitted-config"

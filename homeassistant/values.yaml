@@ -36,7 +36,7 @@ git:
 # Enable a prometheus-operator servicemonitor
 prometheus:
   serviceMonitor:
-    enabled: false
+    enabled: true
     # interval: 1m
     # additionalLabels: {}
 

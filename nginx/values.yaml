@@ -499,7 +499,7 @@ controller:
   metrics:
     port: 10254
     # if this port is changed, change healthz-port: in extraArgs: accordingly
-    enabled: false
+    enabled: true
 
     service:
       annotations: {}
@@ -521,9 +521,9 @@ controller:
       # nodePort: ""
 
     serviceMonitor:
-      enabled: false
+      enabled: true
       additionalLabels: {}
-      namespace: ""
+      namespace: "nginx"
       namespaceSelector: {}
       # Default: scrape .Release.Namespace only
       # To scrape all, use the following:
