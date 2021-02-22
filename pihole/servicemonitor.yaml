@@ -1,0 +1,19 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: pihole-monitor
+  namespace: monitoring
+  labels:
+    release: prometheus-operator
+    k8s-app: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: pihole
+  namespaceSelector:
+    matchNames:
+      - pihole
+  endpoints:
+    - port: prometheus
+      interval: 30s
+    

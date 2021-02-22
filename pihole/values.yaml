@@ -189,7 +189,7 @@ customVolumes:
 
 monitoring:
   podMonitor:
-    enabled: false
+    enabled: true
   sidecar:
     enabled: true
     port: 9617

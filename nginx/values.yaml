@@ -266,7 +266,9 @@ controller:
 
   ## Annotations to be added to controller pods
   ##
-  podAnnotations: {}
+  podAnnotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "10254"
 
   replicaCount: 1
 
@@ -502,9 +504,9 @@ controller:
     enabled: true
 
     service:
-      annotations: {}
-      # prometheus.io/scrape: "true"
-      # prometheus.io/port: "10254"
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "10254"
 
       # clusterIP: ""
 
@@ -522,9 +524,11 @@ controller:
 
     serviceMonitor:
       enabled: true
-      additionalLabels: {}
+      additionalLabels:
+        release: prometheus-operator
       namespace: "nginx"
-      namespaceSelector: {}
+      namespaceSelector:
+        any: true
       # Default: scrape .Release.Namespace only
       # To scrape all, use the following:
       # namespaceSelector:

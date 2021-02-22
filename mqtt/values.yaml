@@ -34,6 +34,8 @@ securityContext: {}
 service:
   annotations: {}
   type: LoadBalancer
+  labels:
+    app: mosquitto
   # externalTrafficPolicy:
   # loadBalancerIP:
 
